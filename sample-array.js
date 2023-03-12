@@ -3,7 +3,12 @@ const options = [
     [ "Add", "Addition"],
     [ "Sub", "Substraction"],
     [ "Multi", "Multification"],
-    [ "Divid", "dividation"]
+    [ "Divid", "dividation"],
+    {
+        add : (a,b) => {
+            return a+b;
+        }
+    }
  ];
 
  //  Total length of array
@@ -14,6 +19,8 @@ options.push("Yodha");
 
 // add new elements using length properties
 options[options.length] = "AgniVeer";
+
+// console.log(options.add(12+12)); return;
 
 
 options.forEach(function(value) {
